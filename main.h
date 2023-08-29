@@ -12,7 +12,7 @@
 /* ----------------------- CONSTS ------------------------- */
 /* -------------------------------------------------------- */
 #define NULL_STRING "(null)"
-#define ACTIVE_SPECIFIERS_NUM 6
+#define ACTIVE_SPECIFIERS_NUM 10
 
 /* -------------------------------------------------------- */
 /* ------------------ STRUCTS & ENUMS --------------------- */
@@ -88,5 +88,9 @@ int print_percent(va_list ap, Flags *f);
 
 /* Print different bases - dif_base_print_funcs.c */
 int print_binary(va_list ap, Flags *f);
+int print_unsigned(va_list ap, Flags *f);
+int print_hex(va_list ap, Flags *f);
+int print_hex_upper(va_list ap, Flags *f);
+int print_octal(va_list ap, Flags *f);
 
 #endif

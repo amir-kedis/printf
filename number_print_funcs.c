@@ -33,3 +33,15 @@ int print_int(va_list ap, Flags *f)
 	(void)f;
 	return (print_number(va_arg(ap, int)));
 }
+
+/**
+ * print_unsigned - prints an unsigned integer
+ * @ap: argument pointer
+ * @f: pointer to struct containing flags
+ * Return: number of characters printed
+ */
+int print_unsigned(va_list ap, Flags *f)
+{
+	(void)f;
+	return (print_number(va_arg(ap, unsigned int)));
+}
