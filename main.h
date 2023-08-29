@@ -69,6 +69,9 @@ int _puts(char *str);
 int (*print_mux(char s))(va_list ap, Flags *f);
 int flag_mux(char s, Flags *f);
 
+/* Base Converter - base_converter.c */
+char *base_converter(unsigned long int num, int base, int lowercase);
+
 /* -------------------------------------------------------- */
 /* ------------------- PRINT FUNCTIONS -------------------- */
 /* -------------------------------------------------------- */
@@ -82,5 +85,8 @@ int print_int(va_list ap, Flags *f);
 
 /* Print Percent Char - print_percent.c */
 int print_percent(va_list ap, Flags *f);
+
+/* Print different bases - dif_base_print_funcs.c */
+int print_binary(va_list ap, Flags *f);
 
 #endif
