@@ -7,8 +7,15 @@
  */
 int (*print_mux(char s))(va_list ap, Flags *f)
 {
-	/* TODO: adjust prototype and impelment */
-	(void)s;
+	/* TODO: Add the rest of the specifiers */
+	PrintSpecifierPair print_pairs[] = {
+			{'c', print_char}, {'s', print_str}, {'\0', NULL}};
+	int i;
+
+	for (i = 0; i < ACTIVE_SPECIFIERS_NUM; i++)
+		if (print_pairs[i].specifier == s)
+			return (print_pairs[i].print_func);
+
 	return (NULL);
 }
 

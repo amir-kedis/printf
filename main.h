@@ -12,6 +12,7 @@
 /* ----------------------- CONSTS ------------------------- */
 /* -------------------------------------------------------- */
 #define NULL_STRING "(null)"
+#define ACTIVE_SPECIFIERS_NUM 3
 
 /* -------------------------------------------------------- */
 /* ------------------ STRUCTS & ENUMS --------------------- */
@@ -34,6 +35,19 @@ typedef struct flags
 	int hash;
 	int zero;
 } Flags;
+
+/**
+ * struct PrintSpecifierPair - struct for print specifier pair
+ * @specifier: specifier
+ * @print_func: print function
+ *
+ * Description: struct for print specifier pair
+ */
+typedef struct PrintSpecifierPair
+{
+	char specifier;
+	int (*print_func)(va_list ap, Flags *f);
+} PrintSpecifierPair;
 
 /* -------------------------------------------------------- */
 /* --------------------- PROTOTYPES ----------------------- */
