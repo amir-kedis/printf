@@ -12,7 +12,7 @@
 /* ----------------------- CONSTS ------------------------- */
 /* -------------------------------------------------------- */
 #define NULL_STRING "(null)"
-#define ACTIVE_SPECIFIERS_NUM 3
+#define ACTIVE_SPECIFIERS_NUM 5
 
 /* -------------------------------------------------------- */
 /* ------------------ STRUCTS & ENUMS --------------------- */
@@ -76,5 +76,8 @@ int flag_mux(char s, Flags *f);
 /* Print alphapetical characters - alpha_print_funcs */
 int print_char(va_list ap, Flags *f);
 int print_str(va_list ap, Flags *f);
+
+/* Print numbers - number_print_funcs.c */
+int print_int(va_list ap, Flags *f);
 
 #endif
