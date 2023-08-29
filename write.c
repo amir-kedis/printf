@@ -5,7 +5,22 @@
  * @c: The character to print
  * Return: On success 1
  */
-int _putchar(char c) { return (write(1, &c, 1)); }
+int _putchar(char c)
+{
+	static int i;
+	static char buffer[BUFFER_SIZE];
+
+	if (c == BUF_FLUSH || i >= BUFFER_SIZE)
+	{
+		write(1, &buffer, i);
+		i = 0;
+	}
+
+	if (c != BUF_FLUSH)
+		buffer[i++] = c;
+
+	return (1);
+}
 
 /**
  * _puts - prints a string to stdout

@@ -31,6 +31,7 @@ int _printf(const char *format, ...)
 			chars_printed += print_func(ap, NULL);
 		}
 	}
+	_putchar(BUF_FLUSH);
 	va_end(ap);
 
 	return (chars_printed);

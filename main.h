@@ -13,6 +13,8 @@
 /* -------------------------------------------------------- */
 #define NULL_STRING "(null)"
 #define ACTIVE_SPECIFIERS_NUM 10
+#define BUFFER_SIZE 1024
+#define BUF_FLUSH -1
 
 /* -------------------------------------------------------- */
 /* ------------------ STRUCTS & ENUMS --------------------- */
