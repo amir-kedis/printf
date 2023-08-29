@@ -20,7 +20,12 @@
 /* --------------------- PROTOTYPES ----------------------- */
 /* -------------------------------------------------------- */
 
-/* Main printf Function */
+/* Main printf Function - printf.c */
 int _printf(const char *format, ...);
+
+/* UTILS - utils.c */
+int _is_digit(char c);
+int _atoi(char *s);
+unsigned int _strlen(char *s);
 
 #endif
