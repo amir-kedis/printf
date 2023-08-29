@@ -11,6 +11,7 @@
 /* -------------------------------------------------------- */
 /* ----------------------- CONSTS ------------------------- */
 /* -------------------------------------------------------- */
+#define NULL_STRING "(null)"
 
 /* -------------------------------------------------------- */
 /* ------------------ STRUCTS & ENUMS --------------------- */
@@ -53,5 +54,13 @@ int _puts(char *str);
 /* Muxes Functions - multiplexers.c */
 int (*print_mux(char s))(va_list ap, Flags *f);
 int flag_mux(char s, Flags *f);
+
+/* -------------------------------------------------------- */
+/* ------------------- PRINT FUNCTIONS -------------------- */
+/* -------------------------------------------------------- */
+
+/* Print alphapetical characters - alpha_print_funcs */
+int print_char(va_list ap, Flags *f);
+int print_str(va_list ap, Flags *f);
 
 #endif
