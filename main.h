@@ -28,4 +28,8 @@ int _is_digit(char c);
 int _atoi(char *s);
 unsigned int _strlen(char *s);
 
+/* Write Functions - write.c */
+int _putchar(char c);
+int _puts(char *str);
+
 #endif
