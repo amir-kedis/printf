@@ -8,11 +8,9 @@
 int (*print_mux(char s))(va_list ap, Flags *f)
 {
 	/* TODO: Add the rest of the specifiers */
-	PrintSpecifierPair print_pairs[] = {{'c', print_char},
-																			{'s', print_str},
-																			{'d', print_int},
-																			{'i', print_int},
-																			{'\0', NULL}};
+	PrintSpecifierPair print_pairs[] = {{'c', print_char},		{'s', print_str},
+																			{'d', print_int},			{'i', print_int},
+																			{'%', print_percent}, {'\0', NULL}};
 	int i;
 
 	for (i = 0; i < ACTIVE_SPECIFIERS_NUM; i++)

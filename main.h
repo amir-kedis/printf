@@ -12,7 +12,7 @@
 /* ----------------------- CONSTS ------------------------- */
 /* -------------------------------------------------------- */
 #define NULL_STRING "(null)"
-#define ACTIVE_SPECIFIERS_NUM 5
+#define ACTIVE_SPECIFIERS_NUM 6
 
 /* -------------------------------------------------------- */
 /* ------------------ STRUCTS & ENUMS --------------------- */
@@ -79,5 +79,8 @@ int print_str(va_list ap, Flags *f);
 
 /* Print numbers - number_print_funcs.c */
 int print_int(va_list ap, Flags *f);
+
+/* Print Percent Char - print_percent.c */
+int print_percent(va_list ap, Flags *f);
 
 #endif
